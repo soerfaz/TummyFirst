@@ -68,6 +68,11 @@
   .restaurants {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .hero {
+    aspect-ratio: 16/9;
+    bottom: 70px;
+  }
 }
 
 @media screen and (min-width: 1600px) {

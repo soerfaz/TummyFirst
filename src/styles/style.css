@@ -116,34 +116,40 @@ a {
   */
 .hero {
   display: flex;
+  position: relative;
+  justify-content: center;
   align-items: center;
   min-height: 380px;
   width: 100%;
   text-align: center;
-  background-image: image-set(
-    url('../public/images/heros/hero-img-small.jpg') 480w,
-    url('../public/images/heros/hero-img-medium.jpg') 800w,
-    url('../public/images/heros/hero-img-large.jpg') 1200w,
-  );
   background-position: center;
+}
+
+.hero__img {
+  width: 100%;
+  min-height: 480px;
+  object-fit: cover;
 }
 
 .hero__inner {
   margin: 0 auto;
+  width: 100%;
   max-width: 800px;
+  position: absolute;
+  background: linear;
 }
 
 .hero__title {
-  color: #3e5641;
+  color: firebrick;
   font-weight: 900;
   font-size: 36px;
 }
 
 .hero__tagline {
-  color: #fff;
+  color: #DB0000;
   margin-top: 16px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 /*
