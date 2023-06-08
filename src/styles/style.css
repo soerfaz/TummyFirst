@@ -22,7 +22,7 @@ a {
 
 .skip-link {
   position: absolute;
-  top: -60px;
+  top: -62px;
   left: 3px;
   display: flex;
   align-items: center;
@@ -120,13 +120,12 @@ a {
   min-height: 380px;
   width: 100%;
   text-align: center;
-  background: linear-gradient(
-      rgba(108, 115, 139, 0.705),
-      rgba(167, 156, 97, 0.7)
-    ),
-    url("../public/images/heros/hero-img.jpg") no-repeat;
+  background-image: image-set(
+    url('../public/images/heros/hero-img-small.jpg') 480w,
+    url('../public/images/heros/hero-img-medium.jpg') 800w,
+    url('../public/images/heros/hero-img-large.jpg') 1200w,
+  );
   background-position: center;
-  background-color: #3e5641;
 }
 
 .hero__inner {
@@ -196,7 +195,8 @@ main {
 }
 
 .restaurant-item__header__poster {
-  aspect-ratio: 16/9;
+  aspect-ratio: 4/3;
+  object-fit: cover;
 }
 
 .restaurant-item .restaurant-item__header .restaurant-item__header__rating {
@@ -258,7 +258,6 @@ main {
   background-color: rgba(108, 115, 139, 0.705);
   margin-bottom: 1.5em;
   padding: 1em 1em;
-  /* From https://css.glass */
   background: rgba(62, 86, 65, 0.14);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -389,18 +388,11 @@ footer {
   padding: 16px;
 }
 
-footer #footerTools {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-}
-
 footer p {
   margin-top: 16px;
 
   text-align: center;
-  color: #aaaaaa;
+  color: darkslategray;
 }
 
 footer p span {

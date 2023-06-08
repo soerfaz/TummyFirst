@@ -1,4 +1,4 @@
-{
+{ 
   "name": "tummyfirst",
   "version": "1.0.0",
   "description": "",
@@ -13,7 +13,7 @@
     "e2e": "codeceptjs run --steps",
     "start": "node server.js",
     "build-image": "node sharp.js",
-    "build-all": "npm run build && npm run build-image"
+    "build-all": "npm run build-image && npm run build"
   },
   "keywords": [],
   "author": "Gesen <soerfaz@gmail.com>",

@@ -13,10 +13,12 @@ const app = new App({
 });
 
 // skip element
+const mainContent = document.querySelector('#mainContent');
 const skipLinkElem = document.querySelector('.skip-link');
+
 skipLinkElem.addEventListener('click', (event) => {
   event.preventDefault();
-  document.querySelector('#mainContent').focus();
+  mainContent.scrollIntoView({ behavior: 'smooth' });
 });
 
 window.addEventListener('hashchange', () => {
